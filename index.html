@@ -388,6 +388,21 @@
       font-size: 1.05rem;
     }
 
+    /* Long personal message: left-aligned paragraphs with a right-aligned signature */
+    .letter .message {
+      text-align: left;
+    }
+    .letter .message p + p {
+      margin-top: 10px;
+    }
+    .letter .message .signature {
+      margin-top: 14px;
+      text-align: right;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--green-dark);
+    }
+
     .letter .date {
       margin-top: 14px;
       font-size: 0.9rem;
@@ -597,11 +612,19 @@
 
     <h2>Chúc mừng sinh nhật! 🎂</h2>
     <span class="nickname">Cún 🐶💚</span>
-    <p>
-      Chúc Cún một ngày sinh nhật thật ngọt ngào, thật ấm áp và đầy những điều dễ thương như chính Cún vậy.
-      Mong năm mới sẽ mang đến thật nhiều sức khỏe, bình an và mọi điều mong ước đều thành hiện thực.
-      Luôn giữ nụ cười tươi như hôm nay nhé! 💚
-    </p>
+    <!-- Personal birthday message (transcribed from the handwritten card) -->
+    <div class="message">
+      <p>Hilu Cún ui, chúc mừng ngày thiên thần của anh hạ phàm, lần thứ 25!!!<br>
+      Kỷ niệm lần thứ 25 😽</p>
+      <p>Thật may mắn vì anh là người được bên cạnh em trong ngày đặc biệt này. Mong là 10 năm, 30 năm, 50 năm, 80 năm nữa vẫn có diễm phúc vậy. (Tất nhiên nếu còn thở 🥺)</p>
+      <p>Tuổi mới anh chúc Cún luôn mạnh khoẻ, luôn tươi tắn, luôn rạng rỡ, slay.<br>
+      Chúc em tiền vào túi thì thật nhiều, tiền ra thì thật ít ít thôi 😆</p>
+      <p>Chúc thêm nữa, mong cho công việc của em thuận lợi, ít khó khăn, ít gian nan, chạy số luôn bùng nổ, lương tăng đều đều, thưởng sẽ ngày càng lớn 🥰</p>
+      <p>Hehe, sau bao ngày thì hôm nay cũng có thể tặng em bó hoa em thích rồi.<br>
+      Còn món quà nữa, ny sắp tới đi concert thì dùng nha, mong là em thích nó.</p>
+      <p>Thiệp cũng kín rồi, sau lại viết tiếp nha. Yêu em 💚💚💚</p>
+      <p class="signature">Your NHH</p>
+    </div>
     <p class="date">Ngày 26/11 · Tuổi 25 🐾</p>
   </section>
 
